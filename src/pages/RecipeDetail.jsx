@@ -1,22 +1,25 @@
 import axios from 'axios';
 import { useEffect, useState } from 'react';
 import { Link, useParams } from 'react-router'
+import useLoading from '../hooks/useLoading';
 
 function RecipeDetail() {
   const { id } = useParams();
 
   const [recipe, setRecipe] = useState({});
-  const [loading, setLoading] = useState(true);
+  const {loading, startLoading, stopLoading} = useLoading();
   const [errorMsg, setErrorMsg] = useState("");
 
+
   async function fetchRecipe() {
+    startLoading();
     try {
       const { data } = await axios.get(`https://dummyjson.com/recipes/${id}`);
       setRecipe(data);
     } catch (error) {
       setErrorMsg("Could not load recipe details. Please try again.")
     }
-    setLoading(false);
+    stopLoading();
   }
   useEffect(() => {
     fetchRecipe();
