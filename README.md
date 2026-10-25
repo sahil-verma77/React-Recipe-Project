@@ -1,16 +1,73 @@
-# React + Vite
+# 🍳 Recipe Finder
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A responsive Recipe Finder web application built with **React JS**. Search for recipes, explore recipe cards, and view ingredients and cooking instructions. This project was built during my React learning journey and deployed using Vercel.
 
-Currently, two official plugins are available:
+## 📸 Preview
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+![Recipe Finder App Preview](./public/React-Recipe-Project.png)
 
-## React Compiler
+🔗 **[Live Demo](https://react-recipe-project-vert.vercel.app/)**
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## ✨ Features
 
-## Expanding the ESLint configuration
+- 🔍 Search for recipes
+- 🍽️ Browse recipe cards with images
+- 📝 View ingredients and cooking instructions
+- 🌐 Fetch recipe data from an API
+- 📄 Navigate through results with pagination
+- 🔄 Client-side routing without full-page reloads
+- 🛠️ Handle failed API requests with error handling
+- 📱 Responsive layout for mobile and desktop screens
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🛠️ Tech Stack
+
+- **React JS** — UI development
+- **Tailwind CSS** — Styling
+- **Vite** — Development server and build tool
+- **React Router** — Client-side navigation
+- **Axios** — API requests
+- **Recipe API** — Recipe data
+
+## 🚀 Getting Started
+
+To run the project locally, make sure you have [Node.js](https://nodejs.org/) and npm installed.
+
+1. **Clone the repository**
+
+   ```bash
+   git clone https://github.com/sahil-verma77/React-Recipe-Project.git
+   ```
+
+2. **Open the project folder**
+
+   ```bash
+   cd React-Recipe-Project
+   ```
+
+3. **Install dependencies**
+
+   ```bash
+   npm install
+   ```
+
+4. **Start the development server**
+
+   ```bash
+   npm run dev
+   ```
+
+   Open the local URL shown in your terminal.
+
+## 📦 Build for Production
+
+```bash
+npm run build
+```
+
+## 📚 What I Practiced
+
+Building this project helped me practice React development, API integration, client-side routing, pagination, error handling, and deploying a project with Vercel.
+
+---
+
+Made while learning React JS 💻
